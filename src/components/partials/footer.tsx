@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <p className="py-6 text-center text-sm text-slate-100 lg:py-3">
-        Copyright © Scissors {currentYear}. All rights reserved.
+        Copyright © Snip for Altschool Africa {currentYear}. All rights reserved.
       </p>
     </footer>
   );

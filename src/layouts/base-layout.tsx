@@ -7,9 +7,9 @@ export default function BaseLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="bg-[#090B0B]">
+    <main className="bg-[#fff] border border-red-600">
       <Head>
-        <title>Scissors</title>
+        <title>Snip</title>
       </Head>
       <section>{children}</section>
     </main>

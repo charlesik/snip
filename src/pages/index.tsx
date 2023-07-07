@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { useMutation } from "@tanstack/react-query";
-import { Toaster, toast } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import { handleShortenLink } from "@/api/shorten-link";
 import AppLayout from "@/layouts/app-layout";
 import LinkDisplay from "@/components/link-display";
@@ -24,11 +24,10 @@ export default function Home() {
       <section className=" h-screen text-center">
         <div className="space-y-6 text-center">
           <h1 className="text-2xl text-white sm:text-4xl lg:text-6xl">
-            Shorten your long links⚡
+            Cut those links...
           </h1>
           <p className="mx-auto text-slate-100/70 lg:w-2/4">
-            Scissors is an efficient and easy-to-use URL shortening service that
-            streamlines your online experience.
+            Let snip be your URL shortner 
           </p>
         </div>
         <form
@@ -43,7 +42,7 @@ export default function Home() {
           />
           <button
             disabled={linkMutation.isLoading}
-            className={`w-full rounded border-4 border-primary bg-primary px-10 py-4 text-center text-white transition-all duration-300 hover:border-primary/70 hover:bg-primary/70 disabled:cursor-not-allowed lg:w-max`}
+            className={`w-full rounded border-4 border-purple-500 bg-purple-500 px-10 py-4 text-center text-white transition-all duration-300 hover:border-primary/70 hover:bg-primary/70 disabled:cursor-not-allowed lg:w-max`}
           >
             {linkMutation.isLoading ? <Loading /> : "Generate link"}
           </button>

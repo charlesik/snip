@@ -3,15 +3,8 @@ import Logo from "../icons/logo";
 
 export default function Header() {
   return (
-    <ul className="mb-10 flex items-center justify-between py-10">
-      <li>
+    <div className="mb-10  m-auto pt-2 pl-4 pb-10">
         <Logo />
-      </li>
-      <li className="font-medium text-white  sm:text-lg">
-        <button className="underline underline-offset-1">
-          Sign in with google
-        </button>
-      </li>
-    </ul>
+    </div>
   );
 }
