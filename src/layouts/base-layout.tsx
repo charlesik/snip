@@ -7,7 +7,7 @@ export default function BaseLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="bg-[#fff] border border-red-600">
+    <main className="bg-[#fff] bg-[url('/moon.jpg')]">
       <Head>
         <title>Snip</title>
       </Head>
